@@ -1,0 +1,15 @@
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+/Users/momokotoyota/.rbenv/versions/2.6.4/bin/ruby -I /Users/momokotoyota/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20210626-62921-zqj74r.rb extconf.rb
+creating Makefile
+
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210626-62921-2ptssl/bootsnap
