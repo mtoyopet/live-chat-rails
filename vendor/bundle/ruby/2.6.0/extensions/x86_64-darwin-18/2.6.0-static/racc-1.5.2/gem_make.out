@@ -1,0 +1,16 @@
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+/Users/momokotoyota/.rbenv/versions/2.6.4/bin/ruby -I /Users/momokotoyota/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20210626-62271-1ftldrk.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/momokotoyota/Documents/live-chat-rails/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20210626-62271-4v2s7x/racc
