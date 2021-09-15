@@ -2,19 +2,25 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!, only: ['index']
 
   def index
-    messages = Message.all
-    messages_array = messages.map do |message|
-      {
-        id: message.id,
-        user_id: message.user.id,
-        name: message.user.name,
-        content: message.content,
-        email: message.user.email,
-        created_at: message.created_at,
-        likes: message.likes.map { |like| { id: like.id, email: like.user.email }  }
-      }
-    end
+    messages = Message.includes(:user, :likes)
+    messages_array = generate_messages_array(messages)
 
-    render json: messages_array, status: 200
+    render json: messages_array, status: :ok
+  end
+
+  private
+
+  def generate_messages_array(messages)
+    messages.map do |message|
+     {
+       id: message.id,
+       user_id: message.user.id,
+       name: message.user.name,
+       content: message.content,
+       email: message.user.email,
+       created_at: message.created_at,
+       likes: message.likes.map { |like| { id: like.id, email: like.user.email }  }
+     }
+   end
   end
 end
